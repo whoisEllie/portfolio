@@ -6,26 +6,7 @@
 
 	import { Keyboard, Pagination, Navigation } from "swiper";
 
-
-	const projects = [
-		{
-			name: "FPS CORE",
-			learnMoreLink: "/projects/welcome",
-			image1: "/images/iqtn52.jpg",
-			image2: "/images/Dp5Cfr.jpg",
-		},
-		{
-			name: "GIANT'S BRIDGE",
-			learnMoreLink: "/projects/welcome",
-			image1: "/images/iqtn52.jpg",
-			image2: "/images/Dp5Cfr.jpg",
-		},
-		{ name: "PROJECT ISOLATION",
-			learnMoreLink: "/projects/welcome",
-			image1: "/images/Dp5Cfr.jpg",
-			image2: "/images/iqtn52.jpg",
-		}
-	]
+	import { projects } from './projects/data.js';
 
 	function SlideChange() {
 		alert('slideChange')
@@ -68,16 +49,18 @@
 		{#each projects as project, p}
 			<SwiperSlide>
 				<div class="main-wrapper">
-					<div class="descriptions">
-						<p class="larger-sub">Action-Packed couch co-op</p>
-						<p class="smaller-sub">Team of 5</p>
-						<p class="smaller-sub">Summer 2021</p>
+					<div class="image-wrapper">
+						<div class="descriptions">
+							<p class="larger-sub">{project.description}</p>
+							<p class="smaller-sub">{project.who}</p>
+							<p class="smaller-sub">{project.when}</p>
+						</div>
+						<img class="image1" src={project.image1} alt="1"/>
 					</div>
-					<img class="image1" src={project.image1} alt="1"/>
 					<img class="image2" src={project.image2} alt="2"/>
-					<h1 class="title">{project.name}</h1>
+					<h1 class="title">{project.title}</h1>
 					<div class="learnmorewrapper">
-						<a class="learnmore" href={project.learnMoreLink}>
+						<a class="learnmore" href="projects/{project.slug}">
 							Learn More!
 						</a>
 					</div>
@@ -159,7 +142,7 @@
 		margin: 0px;
 		font-family: Chillax;
 		font-weight: 600;
-		font-size: 128px;
+		font-size: 8em;
 		color: #FCBB6D;
 		-webkit-text-stroke-width: 4px;
 		-webkit-text-stroke-color: black;
@@ -198,10 +181,14 @@
 		height: 50px;
 	}
 
+	.learnmore:hover {
+		box-shadow: 4px 4px 0 0 #000;
+		-webkit-transform: translate(-4px, -4px);
+  	-ms-transform: translate(-4px, -4px);
+  	transform: translate(-4px, -4px);
+	}
+
 	.descriptions {
-		position: absolute;
-		top: 150px; 
-		left: 40px;
 		font-family: Chillax;
 		font-size: 24px;
 		font-weight: 500;
@@ -220,10 +207,16 @@
 		text-align: right;
 	}
 
-	.image1 {
+	.image-wrapper {
 		position: absolute;
-		top: 100px;
-		left: 550px;
+		top: 150px;
+		left: 40px;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+	}
+
+	.image1 {
+		transform: translate(0px, -50px);
 		width: calc(100vw - 650px);
 		height: calc(100vh - 300px);
 		object-fit: cover;
