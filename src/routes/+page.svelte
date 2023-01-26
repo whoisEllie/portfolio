@@ -1,18 +1,13 @@
 <script> 
 
-	import {Swiper, SwiperSlide } from 'swiper/svelte'; import 'swiper/css'
+	import {Swiper, SwiperSlide } from 'swiper/svelte'; 
+	import 'swiper/css'
 	import 'swiper/css/pagination'
 	import 'swiper/css/navigation'
 
 	import { Keyboard, Pagination, Navigation } from "swiper";
 
 	import { projects } from './projects/data.js';
-
-	function SlideChange() {
-		alert('slideChange')
-	}
-
-
 </script>
 
 <div class="main">
@@ -141,7 +136,7 @@
 		top: 0px;
 		margin: 0px;
 		font-family: Chillax;
-		font-weight: 600;
+		font-weight: 650;
 		font-size: 8em;
 		color: #FCBB6D;
 		-webkit-text-stroke-width: 4px;

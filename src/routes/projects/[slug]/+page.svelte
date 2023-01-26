@@ -3,7 +3,8 @@
 	export let data;
 </script>
 
-<h1>{data.projects.title}</h1>
+<h1>{data.project.title}</h1>
+<p>{data.project.description}</p>
 
 <style>
 

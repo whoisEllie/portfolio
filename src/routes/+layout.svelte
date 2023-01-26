@@ -15,7 +15,8 @@
 	@import url(/fonts/Chillax_Complete/Fonts/WEB/css/chillax.css);
 
 	a {
-		font-family: Chillax-Semibold;
+		font-family: Chillax;
+		font-weight: 600;
 		color: black;
 		text-decoration: none;
 	}
