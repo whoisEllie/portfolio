@@ -7,9 +7,9 @@
 	<div class="header">
 		<div class="image-wrapper">
 			<img src={data.project.image1}/>
-		</div>
-		<div class="text">
-			<h1 style="color: {data.project.highlightColor};">{data.project.title}</h1>
+			<div class="text">
+				<h1 style="color:{data.project.highlightColor};">{data.project.title}</h1>
+			</div>
 		</div>
 	</div>
 	<div class="markdown-wrapper">
@@ -35,7 +35,7 @@
 	}
 
 	.image-wrapper {
-		position: absolute;
+		position: relative;
 		width: 100%;
 		height: 250px;
 		overflow: hidden;
@@ -55,8 +55,10 @@
 
 	.text {
 		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		width: 100%;
-		text-align: center;
 		color: white;
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: black;

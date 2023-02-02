@@ -51,9 +51,9 @@
 							<p class="smaller-sub">{project.who}</p>
 							<p class="smaller-sub">{project.when}</p>
 						</div>
+						<img class="image2" src={project.image2} alt="2"/>
 						<img class="image1" src={project.image1} alt="1"/>
 					</div>
-					<img class="image2" src={project.image2} alt="2"/>
 					<h1 class="title" style="color:{project.highlightColor};">{project.title}</h1>
 					<div class="learnmorewrapper">
 						<a class="learnmore" style="background-color:{project.highlightColor};" href="projects/{project.slug}">
@@ -140,6 +140,7 @@
 		font-family: Chillax;
 		font-size: 24px;
 		font-weight: 500;
+		grid-area: Text;
 	}
 
 	.descriptions p {
@@ -158,29 +159,34 @@
 	.image-wrapper {
 		position: absolute;
 		top: 150px;
-		left: 40px;
+		margin: 0 40px;
 		display: grid;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		grid-template-areas: 
+    "Text Image-1"
+    "Image-2 Image-1";
 	}
 
 	.image1 {
 		transform: translate(0px, -50px);
+		min-width: 250px;
 		width: calc(100vw - 650px);
 		height: calc(100vh - 300px);
 		object-fit: cover;
 		border-radius: 15px;
 		border: 4px solid black;
+		grid-area: Image-1; 
 	}
 
 	.image2 {
-		position: absolute;
-		top: 350px;
-		left: 200px;
-		width: calc(100vw - 1050px);
-		height: calc(100vh - 500px);
+		transform: translate(40px, -10px);
+		width: 100%;
+		height: 100%;
 		object-fit: cover;
 		border-radius: 15px;
 		border: 4px solid black;
+		grid-area: Image-2;
 	}
 
 </style>
