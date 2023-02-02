@@ -1,10 +1,10 @@
-import adapterStatic from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-node';
 import { mdsvex } from 'mdsvex'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapterStatic()
+		adapter: adapter()
 	},
 	extensions: ['.svelte', '.md'],
 	preprocess: [

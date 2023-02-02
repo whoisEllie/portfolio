@@ -19,5 +19,9 @@
 	"type": "module",
 	"dependencies": {
 		"swiper": "^8.4.6"
+	},
+	"scripts": {
+		"build": "vite-build",
+		"start": "export PORT=8080 && node ./build"
 	}
 }

@@ -1,13 +1,18 @@
-FROM node:16.7-alpine AS build
+FROM node:lts-slim as build
 
 WORKDIR /app
+
+COPY package*.json ./
 COPY . .
-RUN npm
-RUN npm build
+RUN npm install
+RUN npm run build
 
-FROM nginx:1.18-alpine AS deploy-static
+FROM node:lts-slim as run
 
-WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-COPY --from=build /app/build .
-ENTRYPOINT ["nginx", "-g", "deamon off;"]
+WORKDIR /app
+COPY --from-build /app/package.json ./package.json
+COPY --from-build /app/build ./build
+RUN npm install --production
+
+EXPOSE 8080
+ENTRYPOINT ["npm", "run", "start"]
