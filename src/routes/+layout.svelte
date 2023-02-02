@@ -12,8 +12,6 @@
 
 <style>
 
-	@import url(/fonts/Chillax_Complete/Fonts/WEB/css/chillax.css);
-
 	a {
 		font-family: Chillax;
 		font-weight: 600;
