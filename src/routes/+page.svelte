@@ -8,6 +8,7 @@
 	import { Keyboard, Pagination, Navigation } from "swiper";
 
 	import { projects } from './projects/data.js';
+
 </script>
 
 <div class="main">
@@ -41,7 +42,7 @@
 		allowTouchMove={false}
 		class="mySwiper"
 	>
-		{#each projects as project, p}
+		{#each projects as project}
 			<SwiperSlide>
 				<div class="main-wrapper">
 					<div class="image-wrapper">
@@ -53,9 +54,9 @@
 						<img class="image1" src={project.image1} alt="1"/>
 					</div>
 					<img class="image2" src={project.image2} alt="2"/>
-					<h1 class="title">{project.title}</h1>
+					<h1 class="title" style="color:{project.highlightColor};">{project.title}</h1>
 					<div class="learnmorewrapper">
-						<a class="learnmore" href="projects/{project.slug}">
+						<a class="learnmore" style="background-color:{project.highlightColor};" href="projects/{project.slug}">
 							Learn More!
 						</a>
 					</div>
@@ -84,52 +85,6 @@
 		width: 100vw;
 	}
 
-	.page-selector {
-		position: fixed;
-		left: 50%;
-		bottom: 20px;
-		transform: translate(-50%, -50%);
-		margin: 0 auto;
-	 	display: grid;
-		grid-template-columns: 25px auto 25px;
-		grid-template-areas: ". button-area .";
-		width: 164px;
-		height: 54px;
-		background: #ECECEC;
-		border: 3px solid black;
-		border-radius: 50px;
-	}
-
-	.button-wrapper {
-		display: grid;
-		grid-template-columns: repeat(3, auto);
-		grid-area: button-area;
-	}
-
-	.button-wrapper div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.button-wrapper button {
-		padding: 0;
-		background-color: #CDCDCD;
-		width: 12px;
-		height: 12px;
-		border: 1px solid black;
-		border-radius: 12px;
-		cursor: pointer;
-	}
-
-	.button-wrapper button:hover {
-		background-color: #9E9E9E;
-	}
-
-	.button-wrapper button:active {
-			background-color: black;
-	}
-
 	.title {
 		position: absolute;
 		left: 25px;
@@ -138,7 +93,6 @@
 		font-family: Chillax;
 		font-weight: 650;
 		font-size: 8em;
-		color: #FCBB6D;
 		-webkit-text-stroke-width: 4px;
 		-webkit-text-stroke-color: black;
 		text-shadow: 4px 4px 0px #000000;
@@ -159,7 +113,6 @@
 		font-weight: 500;
 		font-size: 24px;
 		display: flex;
-		background-color: #FCBB6D;
 		padding: 5px 20px;
 		cursor: pointer;
 		border: 4px solid #000000;
@@ -167,7 +120,7 @@
 		text-align: center;
 		align-items: center;
 		justify-content: center;
-		color: #000000;
+		color: black;
 		-webkit-transition: box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 		transition: box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 		transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;

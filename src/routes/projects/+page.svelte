@@ -19,6 +19,8 @@
 
 <style>
 
+	:global(body) { /* this will apply to <body> */ margin: 0; padding: 0; }
+
 	.projects-carousel {
 		margin: 0px;
 		padding-inline-start: unset;
@@ -52,8 +54,6 @@
 	.image-wrapper {
 		display: flex;
 		background-color: #000;
-		top: 0;
-		left: 0;
 		width: 100%;
 		height: 100%;
 	}
@@ -74,6 +74,7 @@
 
 	.text {
 		position: absolute;
+		pointer-events: none;
 		top: 25%;
 		left: 0;
 		display: grid;
