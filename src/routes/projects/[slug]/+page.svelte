@@ -107,7 +107,7 @@
 		width: 100%;
 		height: 250px;
 		text-align: center;
-		font-family: Chillax-Variable;
+		font-family: Chillax-Bold;
 	}
 
 	.image-wrapper {
@@ -146,7 +146,7 @@
 		max-width: 1080px;
 		margin: 0 auto;
 		padding: 0 15px;
-		font-family: Chillax;
+		font-family: Chillax-Variable;
 	}
 
 </style>

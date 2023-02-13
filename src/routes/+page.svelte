@@ -166,8 +166,7 @@
 		left: 25px;
 		top: 0px;
 		margin: 0px;
-		font-family: Chillax-Variable;
-		font-weight: 650;
+		font-family: Chillax-Bold;
 		font-size: 8em;
 		-webkit-text-stroke-width: 4px;
 		-webkit-text-stroke-color: black;
@@ -185,8 +184,7 @@
 		position: absolute;
 		left: calc(100vw - 20%);
 		top: calc(100vh - 30%);
-		font-family: Chillax;
-		font-weight: 500;
+		font-family: Chillax-Medium;
 		font-size: 24px;
 		display: flex;
 		padding: 5px 20px;
