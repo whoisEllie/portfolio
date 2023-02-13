@@ -68,85 +68,10 @@
 
 
 <style>
+	@import url("/fonts/Chillax_Complete/Fonts/WEB/css/chillax.css");
 
 	:global(body) { /* this will apply to <body> */ margin: 0; padding: 0; }
 	:root { --swiper-theme-color: #000 }
-
-	@font-face {
-  font-family: 'Chillax-Variable';
-  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Variable.woff2') format('woff2'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Variable.woff') format('woff'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Variable.ttf') format('truetype');
-       font-weight: 200 700;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Chillax-Extralight';
-  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.woff2') format('woff2'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.woff') format('woff'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.ttf') format('truetype');
-       font-weight: 200;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Chillax-Light';
-  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.woff2') format('woff2'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.woff') format('woff'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.ttf') format('truetype');
-       font-weight: 300;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Chillax-Regular';
-  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.woff2') format('woff2'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.woff') format('woff'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.ttf') format('truetype');
-       font-weight: 400;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Chillax-Medium';
-  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.woff2') format('woff2'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.woff') format('woff'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.ttf') format('truetype');
-       font-weight: 500;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Chillax-Semibold';
-  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.woff2') format('woff2'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.woff') format('woff'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.ttf') format('truetype');
-       font-weight: 600;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Chillax-Bold';
-  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.woff2') format('woff2'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.woff') format('woff'),
-       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.ttf') format('truetype');
-       font-weight: 700;
-       font-display: swap;
-       font-style: normal;
-}
 
 	.main {
 		margin: 0;
@@ -166,7 +91,7 @@
 		left: 25px;
 		top: 0px;
 		margin: 0px;
-		font-family: Chillax;
+		font-family: Chillax-Variable;
 		font-weight: 650;
 		font-size: 8em;
 		-webkit-text-stroke-width: 4px;
@@ -213,7 +138,7 @@
 	}
 
 	.descriptions {
-		font-family: Chillax;
+		font-family: Chillax-Variable;
 		font-size: 24px;
 		font-weight: 500;
 		grid-area: Text;
