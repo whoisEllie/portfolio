@@ -90,7 +90,7 @@
 }
 
 	a {
-		font-family: Chillax;
+		font-family: Chillax-Variable;
 		font-weight: 600;
 		color: black;
 		text-decoration: none;
