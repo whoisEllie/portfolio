@@ -3,6 +3,7 @@
 		<a href="/"> Ellie Kelemen </a>
 	</div>
 	<div class="right-aligned">
+		<a href="/files/EllieKelemenCV.pdf"> CV </a>
 		<a href="/projects/" class="projects"> Projects </a>
 		<a href="mailto:elliekelemen@protonmail.com" class="contact"> Contact me! </a>
 	</div>
@@ -38,7 +39,7 @@
 		margin-left: auto;
 		padding-right: 10px;
 		display: grid;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(3, auto);
 		align-items: center;
 		justify-content: center;
 	}
