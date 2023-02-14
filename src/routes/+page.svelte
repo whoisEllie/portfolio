@@ -53,13 +53,14 @@
 						</div>
 						<img class="image2" src={project.image2} alt="2"/>
 						<img class="image1" src={project.image1} alt="1"/>
+						<div class="learnmorewrapper">
+							<a class="learnmore" style="background-color:{project.highlightColor};" href="projects/{project.slug}">
+								Learn More!
+							</a>
+						</div>
 					</div>
 					<h1 class="title" style="color:{project.highlightColor};">{project.title}</h1>
-					<div class="learnmorewrapper">
-						<a class="learnmore" style="background-color:{project.highlightColor};" href="projects/{project.slug}">
-							Learn More!
-						</a>
-					</div>
+
 				</div>
 			</SwiperSlide>
 		{/each}
@@ -167,7 +168,7 @@
 		top: 0px;
 		margin: 0px;
 		font-family: Chillax-Bold;
-		font-size: 8em;
+		font-size: 8rem;
 		-webkit-text-stroke-width: 4px;
 		-webkit-text-stroke-color: black;
 		text-shadow: 4px 4px 0px #000000;
@@ -182,10 +183,13 @@
 
 	.learnmore {
 		position: absolute;
-		left: calc(100vw - 20%);
-		top: calc(100vh - 30%);
+		bottom: 0;
+		right: 0;
+		transform: translate(20px, -20px);
+		-webkit-transform: translate(20px, -20px);
+		-ms-transform: translate(20px, -20px);
 		font-family: Chillax-Medium;
-		font-size: 24px;
+		font-size: 1.5em;
 		display: flex;
 		padding: 5px 20px;
 		cursor: pointer;
@@ -205,14 +209,14 @@
 
 	.learnmore:hover {
 		box-shadow: 4px 4px 0 0 #000;
-		-webkit-transform: translate(-4px, -4px);
-  	-ms-transform: translate(-4px, -4px);
-  	transform: translate(-4px, -4px);
+		-webkit-transform: translate(16px, -24px);
+  	-ms-transform: translate(16px, -24px);
+  	transform: translate(16px, -24px);
 	}
 
 	.descriptions {
 		font-family: Chillax-Variable;
-		font-size: 24px;
+		font-size: 2em;
 		font-weight: 500;
 		grid-area: Text;
 	}
@@ -231,7 +235,7 @@
 	}
 
 	.image-wrapper {
-		position: absolute;
+		position: relative;
 		top: 150px;
 		margin: 0 40px;
 		display: grid;
@@ -245,7 +249,7 @@
 	.image1 {
 		transform: translate(0px, -50px);
 		min-width: 250px;
-		width: calc(100vw - 650px);
+		width: calc(100vw - 750px);
 		height: calc(100vh - 300px);
 		object-fit: cover;
 		border-radius: 15px;
