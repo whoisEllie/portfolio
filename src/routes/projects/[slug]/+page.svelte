@@ -99,7 +99,7 @@
 
 	.article {
 		width: 100vw;
-		min-height: calc(100vh - 87px);
+		min-height: calc(100vh - 89px);
 	}
 
 	.header {

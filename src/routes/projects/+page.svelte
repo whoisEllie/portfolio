@@ -101,7 +101,7 @@
 		margin: 0px;
 		padding-inline-start: unset;
 		width: 100vw;
-		height: calc(100vh - 87px);
+		height: calc(100vh - 89px);
 		display: grid;
 		grid-template-columns: repeat(3, calc(100vw/3));
 	}

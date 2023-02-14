@@ -104,6 +104,7 @@
 		height: 87px;
 		border-bottom: 2px solid #000000;
 		align-items: center;
+    overflow-x: hidden;
 	}
 
 	.left-aligned a {
@@ -113,7 +114,6 @@
 
 	.right-aligned {
 		margin-left: auto;
-		padding-right: 10px;
 		display: grid;
 		grid-template-columns: repeat(3, auto);
 		align-items: center;

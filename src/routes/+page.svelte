@@ -69,7 +69,7 @@
 
 <style>
 
-	:global(body) { /* this will apply to <body> */ margin: 0; padding: 0; }
+	:global(body) { /* this will apply to <body> */ margin: 0; padding: 0; overflow-x: hidden; }
 	:root { --swiper-theme-color: #000 }
 
 	@font-face {
@@ -153,11 +153,11 @@
 		display: flex;
 		background-color: #FAF9F6;
 		width: 100%;
-		min-height: calc(100vh - 87px); 
+		height: calc(100vh - 89px); 
 	}
 
 	.main-wrapper {
-		height: calc(100vh - 87px);
+		height: calc(100vh - 89px);
 		width: 100vw;
 	}
 
