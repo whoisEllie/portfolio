@@ -1,13 +1,15 @@
-<script>
-	export let Title;
-	export let Description;
-	export let Image;
-	export let Alt;
+<script lang="ts">
+	let {
+		Title,
+		Description,
+		Image,
+		Alt
+	} = $props();
 </script>
 
 <div
 	class="card"
-	on:click={() => {
+	onclick={() => {
 		alert(Title);
 	}}
 >

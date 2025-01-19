@@ -75,7 +75,7 @@
 		</div>
 
 		<div
-			on:click={() => window.open('https://github.com/whoisEllie/portfolio')}
+			onclick={() => window.open('https://github.com/whoisEllie/portfolio')}
 			class="acknowledgment"
 		>
 			{'Built with ❤️  & SvelteKit'}
