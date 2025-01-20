@@ -7,6 +7,11 @@
 	import FallBlauThumbnail from '$lib/images/FallBlau.jpg';
 	import RainstoneThumbnail from '$lib/images/Rainstone.png';
 	import ProfilePicture from '$lib/images/pfp.jpg';
+
+	import Github from '$lib/icons/brand-github.svg';
+	import Youtube from '$lib/icons/brand-youtube.svg';
+	import Bluesky from '$lib/icons/brand-bluesky.svg';
+	import Share from '$lib/icons/share.svg';
 </script>
 
 <div class="split">
@@ -18,9 +23,17 @@
 					alt="Ellie facing away from the camera, wearing a grey backpack. She is looking at a skyline in the distance, lit in the warmorange glow of late evening"
 					class="pfp"
 				/>
-				<div>
-					<div style="font-size: 1.75rem;">Ellie Kelemen</div>
-					<div style="font-size: 1rem;">Software Engineer, Technical Director, Maker</div>
+				<div style="font-size: 1.75rem;">Ellie Kelemen</div>
+				<div style="font-size: 1rem;">Software Engineer, Technical Director, Maker</div>
+				<div class="socials">
+					<a href="https://bsky.app/profile/elliekelemen.com"
+						><img src={Bluesky} alt="The Bluesky Logo" /></a
+					>
+					<a href="https://youtube.com/@elliemakesgames"
+						><img src={Youtube} alt="The Youtube Logo" /></a
+					>
+					<a href="https://github.com/whoisEllie"><img src={Github} alt="The Github Logo" /> </a>
+					<a href="https://links.elliekelemen.com/"><img src={Share} alt="A share icon" /> </a>
 				</div>
 			</div>
 		</div>
@@ -31,8 +44,10 @@
 			I'm a Masters student in Computer Science at the University of Exeter. Alongside my studies, I
 			work part-time as a VR & AI developer at Orbital Media, build & maintain an open-source plugin
 			called FPS Core, and work on a multiplayer game called Warbound. <br /><br /> Previously, I've
-			worked as a frontend developer at Hatless Studios, and interned at Madfinger Games. <br /><br
-			/> In my spare time, you can probably find me on a mountain somewhere, hiking!
+			worked as a frontend developer at Hatless Studios, where I built advanced frontends with the
+			React framework. I've also and interned at Madfinger Games, where I worked as a QA tester on
+			Shadowgun Legends. <br /><br /> In my spare time, you can probably find me on a mountain somewhere,
+			hiking!
 		</div>
 		<h2>Projects</h2>
 		<div class="projects">
@@ -106,10 +121,9 @@
 	}
 
 	.namecard {
-		display: grid;
-		margin-inline: auto;
-		grid-template-rows: repeat(2, auto);
-		column-gap: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 		justify-content: center;
 		align-items: center;
 	}
@@ -120,6 +134,12 @@
 		aspect-ratio: 1/1;
 		border-radius: 100%;
 		object-fit: cover;
+	}
+
+	.socials {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
 	}
 
 	.projects {

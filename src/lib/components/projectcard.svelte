@@ -33,6 +33,9 @@
 		cursor: pointer;
 		text-decoration: none;
 		color: black;
+		box-shadow:
+			8px 8px 16px #cccccc,
+			-8px -8px 16px #ffffff;
 	}
 
 	.card-inner {
