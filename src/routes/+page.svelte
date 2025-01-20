@@ -11,6 +11,7 @@
 	import Github from '$lib/icons/brand-github.svg';
 	import Youtube from '$lib/icons/brand-youtube.svg';
 	import Bluesky from '$lib/icons/brand-bluesky.svg';
+	import Linkedin from '$lib/icons/brand-linkedin.svg';
 	import Share from '$lib/icons/share.svg';
 </script>
 
@@ -33,7 +34,24 @@
 						><img src={Youtube} alt="The Youtube Logo" /></a
 					>
 					<a href="https://github.com/whoisEllie"><img src={Github} alt="The Github Logo" /> </a>
-					<a href="https://links.elliekelemen.com/"><img src={Share} alt="A share icon" /> </a>
+					<a href="https://www.linkedin.com/in/ellie-kelemen/"
+						><img src={Linkedin} alt="A Linkedin Logo" /></a
+					>
+					<button
+						class="share-button"
+						on:click={() => {
+							if (navigator.share) {
+								navigator
+									.share({
+										title: "Ellie's Portfolio",
+										text: "Share a quick link to ellie's portfolio and socials",
+										url: 'https://links.elliekelemen.com'
+									})
+									.then(() => console.log('Shared successfully'))
+									.catch(() => console.log('Encountered an error while sharing'));
+							}
+						}}><img src={Share} alt="A share icon" /></button
+					>
 				</div>
 			</div>
 		</div>
@@ -108,11 +126,22 @@
 		position: relative;
 		justify-content: center;
 		margin-top: 10rem;
+
+		@media screen and (max-width: 650px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0 1rem;
+		}
 	}
 
 	.fixed {
 		position: fixed;
 		display: flex;
+
+		@media screen and (max-width: 650px) {
+			position: relative;
+		}
 	}
 
 	.scrolling {
@@ -140,6 +169,14 @@
 		display: flex;
 		justify-content: center;
 		gap: 1rem;
+	}
+
+	.share-button {
+		border: none;
+		padding: 0;
+		margin: 0;
+		height: 24px;
+		cursor: pointer;
 	}
 
 	.projects {
