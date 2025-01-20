@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-
 	let {
 		Title,
 		Description,
@@ -12,7 +10,7 @@
 
 <a class="card" href={slug}>
 	<div class="card-inner">
-		<img class="image" src={Image} alt={Alt} />
+		<img class="image" src={Image} alt={Alt} draggable="false" />
 		<div class="text">
 			<div class="title">
 				{Title}

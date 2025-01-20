@@ -1,0 +1,13 @@
+---
+
+title: Warbound
+
+---
+
+<script>
+	import Title from '$lib/components/title.svelte';
+</script>
+
+<Title text={title}/>
+
+Warbound is a multiplayer FPS/RTS, currently in development by TrumpetTank.

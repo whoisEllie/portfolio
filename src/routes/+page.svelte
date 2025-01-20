@@ -1,4 +1,5 @@
 <script>
+	// images
 	import Projectcard from '../lib/components/projectcard.svelte';
 	import WarboundThumbnail from '$lib/images/Warbound.gif';
 	import FPSCoreThumbnail from '$lib/images/FPSCore.png';
@@ -8,6 +9,7 @@
 	import RainstoneThumbnail from '$lib/images/Rainstone.png';
 	import ProfilePicture from '$lib/images/pfp.jpg';
 
+	// icons
 	import Github from '$lib/icons/brand-github.svg';
 	import Youtube from '$lib/icons/brand-youtube.svg';
 	import Bluesky from '$lib/icons/brand-bluesky.svg';
@@ -21,21 +23,24 @@
 			<div class="namecard">
 				<img
 					src={ProfilePicture}
-					alt="Ellie facing away from the camera, wearing a grey backpack. She is looking at a skyline in the distance, lit in the warmorange glow of late evening"
+					alt="Ellie facing away from the camera, wearing a grey backpack. She is looking at a skyline in the distance, lit in the warm, orange glow of late evening"
 					class="pfp"
+					draggable="false"
 				/>
 				<div style="font-size: 1.75rem;">Ellie Kelemen</div>
 				<div style="font-size: 1rem;">Software Engineer, Technical Director, Maker</div>
 				<div class="socials">
 					<a href="https://bsky.app/profile/elliekelemen.com"
-						><img src={Bluesky} alt="The Bluesky Logo" /></a
+						><img src={Bluesky} alt="The Bluesky Logo" draggable="false" /></a
 					>
 					<a href="https://youtube.com/@elliemakesgames"
-						><img src={Youtube} alt="The Youtube Logo" /></a
+						><img src={Youtube} alt="The Youtube Logo" draggable="false" /></a
 					>
-					<a href="https://github.com/whoisEllie"><img src={Github} alt="The Github Logo" /> </a>
+					<a href="https://github.com/whoisEllie"
+						><img src={Github} alt="The Github Logo" draggable="false" />
+					</a>
 					<a href="https://www.linkedin.com/in/ellie-kelemen/"
-						><img src={Linkedin} alt="A Linkedin Logo" /></a
+						><img src={Linkedin} alt="A Linkedin Logo" draggable="false" /></a
 					>
 					<button
 						class="share-button"
@@ -50,7 +55,7 @@
 									.then(() => console.log('Shared successfully'))
 									.catch(() => console.log('Encountered an error while sharing'));
 							}
-						}}><img src={Share} alt="A share icon" /></button
+						}}><img src={Share} alt="A share icon" draggable="false" /></button
 					>
 				</div>
 			</div>

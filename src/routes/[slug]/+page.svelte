@@ -1,17 +1,23 @@
 <script lang="ts">
-	import type { PageData } from '../$types';
+	import type { PageProps } from '../$types';
 
-	let { data }: { data: PageData } = $props();
+	let { data }: any = $props();
+	let Content = data.content;
 </script>
 
 <div class="about-wrapper">
-	<h1>Project title</h1>
+	<article>
+		<Content />
+	</article>
 </div>
 
 <style>
 	.about-wrapper {
 		display: flex;
-		width: min(auto, 440px);
+		flex-direction: column;
+		width: min(100% - 15px, 840px);
+		margin-inline: auto;
 		justify-self: center;
+		align-items: center;
 	}
 </style>

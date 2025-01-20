@@ -1,14 +1,20 @@
-import type { PageLoad } from "./$types";
 import { error } from "@sveltejs/kit";
 
-export const load: PageLoad = ({ params }) => {
-	console.log(params);
+export async function load({ params }: { params: any }) {
 
-	if (params.slug === "warbound") {
+	try {
+
+		const post = await import(`../../lib/markdown/${params.slug}.svx`);
+
+		console.log(post);
+
 		return {
-			slug: params.slug
+			slug: params.slug,
+			content: post.default,
 		}
+	} catch (err) {
+		//TODO: Make this more representative of the actual error :)
+		error(404, "Project not found")
 	}
 
-	error(404, 'Project Not found')
 }
