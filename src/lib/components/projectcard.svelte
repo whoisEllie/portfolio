@@ -1,6 +1,5 @@
 <script lang="ts">
-
-	import { goto } from "$app/navigation";
+	import { goto } from '$app/navigation';
 
 	let {
 		Title,
@@ -8,15 +7,10 @@
 		Image,
 		Alt,
 		slug
-	}: {Title: string; Description: string; Image: string; Alt: string; slug: string} = $props();
+	}: { Title: string; Description: string; Image: string; Alt: string; slug: string } = $props();
 </script>
 
-<div
-	class="card"
-	onclick={() => {
-		goto(`/${slug}`)
-	}}
->
+<a class="card" href={slug}>
 	<div class="card-inner">
 		<img class="image" src={Image} alt={Alt} />
 		<div class="text">
@@ -28,7 +22,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</a>
 
 <style>
 	.card {
@@ -36,6 +30,9 @@
 		border: 3px solid #e0e0e0;
 		padding: 0.25rem;
 		overflow: hidden;
+		cursor: pointer;
+		text-decoration: none;
+		color: black;
 	}
 
 	.card-inner {

@@ -80,12 +80,9 @@
 			/>
 		</div>
 
-		<div
-			onclick={() => window.open('https://github.com/whoisEllie/portfolio')}
-			class="acknowledgment"
-		>
+		<a href="https://github.com/whoisEllie/portfolio" class="acknowledgment">
 			{'Built with ❤️  & SvelteKit'}
-		</div>
+		</a>
 	</div>
 </div>
 
@@ -139,6 +136,8 @@
 		width: max-content;
 		margin: 2rem auto;
 		cursor: pointer;
+		text-decoration: none;
+		color: black;
 		font-size: 14px;
 		font-weight: 350;
 		border-radius: 25px;
