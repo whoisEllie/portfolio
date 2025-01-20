@@ -41,36 +41,42 @@
 				Alt="Image"
 				Title="Warbound"
 				Description="A multiplayer FPS/RTS, currently in development in Unreal Engine 5"
+				slug="warbound"
 			/>
 			<Projectcard
 				Image={FPSCoreThumbnail}
 				Alt="Image"
 				Title="FPS Core"
 				Description="A first-person shooter framework for Unreal Engine, facilitating easy setup and deep customization of FPS projects"
+				slug="fpscore"
 			/>
 			<Projectcard
 				Image={ProjectIsolationThumbnail}
 				Alt="Image"
 				Title="Project Isolation"
 				Description="A singleplayer open-world FPS, built on Unreal Engine 4.27 whose development led to the creation of FPS Core "
+				slug="isolation"
 			/>
 			<Projectcard
 				Image={GiantsBridgeThumbnail}
 				Alt="Image"
 				Title="Giant's Bridge"
 				Description="A third-person couch co-op game built as part of Summer Game Dev 2021."
+				slug="giantsbridge"
 			/>
 			<Projectcard
 				Image={FallBlauThumbnail}
 				Alt="Image"
 				Title="Fall Blau"
 				Description="An authentic WW2 FPS, built in Unreal Engine and my first exploration and use of C++ programming"
+				slug="fallblau"
 			/>
 			<Projectcard
 				Image={RainstoneThumbnail}
 				Alt="Image"
 				Title="Rainstone"
 				Description="An early game jam project and my first experience working with a team."
+				slug="rainstone"
 			/>
 		</div>
 

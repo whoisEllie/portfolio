@@ -1,16 +1,20 @@
 <script lang="ts">
+
+	import { goto } from "$app/navigation";
+
 	let {
 		Title,
 		Description,
 		Image,
-		Alt
-	} = $props();
+		Alt,
+		slug
+	}: {Title: string; Description: string; Image: string; Alt: string; slug: string} = $props();
 </script>
 
 <div
 	class="card"
 	onclick={() => {
-		alert(Title);
+		goto(`/${slug}`)
 	}}
 >
 	<div class="card-inner">
