@@ -1,13 +1,22 @@
 ---
 
 title: Warbound
+hierarchy: 1
 
 ---
 
 <script>
 	import Title from '$lib/components/title.svelte';
+	import Carousel from '$lib/components/carousel.svelte';
+
+	import WarboundThumbnail from '$lib/images/Warbound.gif';
+	import WarboundUI from '$lib/images/Warbound_UI.png';
 </script>
 
 <Title text={title}/>
 
 Warbound is a multiplayer FPS/RTS, currently in development by TrumpetTank.
+
+I was responsible for the overall architecture of the project, leading the technical design.
+
+<Carousel images={new Array(WarboundThumbnail, WarboundUI)}/>
