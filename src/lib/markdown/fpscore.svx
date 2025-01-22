@@ -1,0 +1,28 @@
+---
+
+title: FPSCore
+
+---
+
+<script>
+	import Title from '$lib/components/title.svelte';
+	import Carousel from '$lib/components/carousel.svelte';
+
+	import FPSCoreThumbnail from '$lib/images/FPSCore/FPSCore_Thumb.png';
+	import FPSCorePhoto1 from '$lib/images/FPSCore/FPSCore_Photo1.png';
+	import FPSCorePhoto2 from '$lib/images/FPSCore/FPSCore_Photo2.png';
+	import FPSCorePhoto3 from '$lib/images/FPSCore/FPSCore_Photo3.png';
+</script>
+
+<Title text={title}/>
+
+<Carousel images={new Array(FPSCoreThumbnail, FPSCorePhoto1, FPSCorePhoto2, FPSCorePhoto3)}/>
+
+I independently developed and published FPS Core, a robust gameplay framework plugin for Unreal Engine, which is now available on the official Unreal Engine Marketplace (currently FAB). Designed to streamline the creation of first-person shooter games, FPS Core quickly gained popularity, achieving over 85,000 downloads and maintaining an impressive 4.3/5-star average rating. This success highlights its value to developers looking for efficient and effective tools in their game development projects.
+
+To ensure accessibility and usability, I authored detailed and user-friendly documentation, making the plugin especially popular among new Unreal Engine users. Recognizing the growing demand for support, I scaled access to the documentation by implementing a Cloudflare CDN, enabling it to handle over 150,000 monthly connections seamlessly. This ensured that users had uninterrupted access to the resources they needed to fully leverage FPS Core’s features.
+
+To further enhance user experience, I developed a custom OpenAI-powered bot using GPT-4. The bot provides automated responses to common questions based on the documentation, significantly reducing wait times and improving overall user satisfaction. This innovation allowed me to address the most frequent inquiries effectively while focusing on other aspects of community engagement.
+
+In addition to automation, I offered one-on-one technical support through Discord, helping users adapt FPS Core to their specific needs. This hands-on approach not only expanded the plugin’s reach but also solidified its reputation as a trusted tool within the Unreal Engine Indie FPS development community. Through these combined efforts, FPS Core has become an indispensable asset for developers seeking to create exceptional FPS games.
+

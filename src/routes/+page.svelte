@@ -1,8 +1,8 @@
 <script>
 	// images
 	import Projectcard from '../lib/components/projectcard.svelte';
-	import WarboundThumbnail from '$lib/images/Warbound.gif';
-	import FPSCoreThumbnail from '$lib/images/FPSCore.png';
+	import WarboundThumbnail from '$lib/images/Warbound/Warbound.gif';
+	import FPSCoreThumbnail from '$lib/images/FPSCore/FPSCore_Thumb.png';
 	import ProjectIsolationThumbnail from '$lib/images/ProjectIsolation.png';
 	import GiantsBridgeThumbnail from '$lib/images/GiantsBridge.jpg';
 	import FallBlauThumbnail from '$lib/images/FallBlau.jpg';

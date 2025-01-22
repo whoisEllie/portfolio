@@ -1,7 +1,6 @@
 ---
 
 title: Warbound
-hierarchy: 1
 
 ---
 
@@ -9,8 +8,8 @@ hierarchy: 1
 	import Title from '$lib/components/title.svelte';
 	import Carousel from '$lib/components/carousel.svelte';
 
-	import WarboundThumbnail from '$lib/images/Warbound.gif';
-	import WarboundUI from '$lib/images/Warbound_UI.png';
+	import WarboundThumbnail from '$lib/images/Warbound/Warbound.gif';
+	import WarboundUI from '$lib/images/Warbound/Warbound_UI.png';
 </script>
 
 <Title text={title}/>
