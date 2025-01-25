@@ -23,7 +23,7 @@
 	}
 
 	.back {
-		position: absolute;
+		position: fixed;
 		top: 10px;
 		left: 10px;
 		text-decoration: none;

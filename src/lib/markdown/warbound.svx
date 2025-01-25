@@ -14,8 +14,16 @@ title: Warbound
 
 <Title text={title}/>
 
-Warbound is a multiplayer FPS/RTS, currently in development by TrumpetTank.
-
-I was responsible for the overall architecture of the project, leading the technical design.
+Warbound is a large-scale multiplayer FPS/RTS game, intended as a spiritual successor to Heroes & Generals. I was one of the co-founders of the team, working primarily as a technical designer and gameplay programmer. 
 
 <Carousel images={new Array(WarboundThumbnail, WarboundUI)}/>
+
+I was involved from the very beginning, where I took charge of developing the technical infrastructure that would support the project. Within a week of the team's formation, I had configured perforce version control for the main Unreal project, a github organisation for surrounding infrastructure, and an AWS organization for cloud-related tasks. The rapid deployment of this critical infrastructure allowed us to establish early development practices, setting the stage for the project's long-term success.
+
+In addition to overseeing the setup, I led the design and architecture of the entire game's technical framework. As a small team, I knew that we needed to make smart technical decisions in order to be able to successfuly scale the project as our team, ambitions and playerbase grew. In order to accomplish this, I first worked closely with the remainder of the team in order to clearly define our initial scope, after which I designed an architecture based on the Epic Games starter project, "Lyra". Although I designed our system around Lyra, we did not simply use the Lyra project as a base - rather, we used it as a guideline in building our own systems, which allowed us to build a robust, no-compromises architecture, combining the best of Lyra's battle-tested nature while allowing us to include our own architecture from the beginning.
+
+Following these designs, I worked closely with the team to define the core systems that would be critical for the game's vertical slice, and I took on the implementation of over 10,000 lines of production-level C++ code. This included building essential systems like player movement, input management, and session handling—each of which was designed to meet the demanding requirements of multiplayer gameplay.
+
+Beyond the core development work, I played an active role in building and maintaining a community around Warbound. As a small indie team, our priority has always been building and maintaining trust with our growing community. As part of an effort to increase transparency, I began to run bi-weekly Twitch streams where I showcased the team's development progress. These streams provided a behind-the-scenes look at our work, allowing players to see the game evolve in real-time while also reinforcing trust in the project's ongoing development. The streams garnered an average of 100+ views per session, and the direct interaction with our community led to a notable increase in activity within our Discord server, strengthening our community and enhancing player investment in the game's future.
+
+Throughout the project, my technical leadership and commitment to community engagement helped lay a solid foundation for Warbound, both from a development and a player-relations perspective. The balance between technical execution and fostering a passionate fanbase has been a key factor in the project's momentum and early success.
