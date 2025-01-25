@@ -1,6 +1,8 @@
 <script>
+	import ProjectCard from '../lib/components/projectcard.svelte';
+	import ExperienceCard from '$lib/components/experiencecard.svelte';
+
 	// images
-	import Projectcard from '../lib/components/projectcard.svelte';
 	import WarboundThumbnail from '$lib/images/Warbound/Warbound.gif';
 	import FPSCoreThumbnail from '$lib/images/FPSCore/FPSCore_Thumb.png';
 	import ProjectIsolationThumbnail from '$lib/images/ProjectIsolation.png';
@@ -72,44 +74,62 @@
 			Shadowgun Legends. <br /><br /> In my spare time, you can probably find me on a mountain somewhere,
 			hiking!
 		</div>
+		<h2>Work Experience</h2>
+		<div class="experience">
+			<ExperienceCard
+				Title="Orbital Global Group"
+				Description="Software Developer in VR & AI"
+				url="https://orbitalglobalgroup.com/"
+			/>
+			<ExperienceCard
+				Title="Hatless Studios"
+				Description="Frontend Software Developer"
+				url="https://www.linkedin.com/company/hatless-studios/"
+			/>
+			<ExperienceCard
+				Title="MADFINGER Games"
+				Description="QA Intern"
+				url="https://www.madfingergames.com/"
+			/>
+		</div>
 		<h2>Projects</h2>
 		<div class="projects">
-			<Projectcard
+			<ProjectCard
 				Image={WarboundThumbnail}
 				Alt="Image"
 				Title="Warbound"
 				Description="A multiplayer FPS/RTS, currently in development in Unreal Engine 5"
 				slug="warbound"
 			/>
-			<Projectcard
+			<ProjectCard
 				Image={FPSCoreThumbnail}
 				Alt="Image"
 				Title="FPS Core"
 				Description="A first-person shooter framework for Unreal Engine, facilitating easy setup and deep customization of FPS projects"
 				slug="fpscore"
 			/>
-			<Projectcard
+			<ProjectCard
 				Image={ProjectIsolationThumbnail}
 				Alt="Image"
 				Title="Project Isolation"
 				Description="A singleplayer open-world FPS, built on Unreal Engine 4.27 whose development led to the creation of FPS Core "
 				slug="isolation"
 			/>
-			<Projectcard
+			<ProjectCard
 				Image={GiantsBridgeThumbnail}
 				Alt="Image"
 				Title="Giant's Bridge"
 				Description="A third-person couch co-op game built as part of Summer Game Dev 2021."
 				slug="giantsbridge"
 			/>
-			<Projectcard
+			<ProjectCard
 				Image={FallBlauThumbnail}
 				Alt="Image"
 				Title="Fall Blau"
 				Description="An authentic WW2 FPS, built in Unreal Engine and my first exploration and use of C++ programming"
 				slug="fallblau"
 			/>
-			<Projectcard
+			<ProjectCard
 				Image={RainstoneThumbnail}
 				Alt="Image"
 				Title="Rainstone"
@@ -186,6 +206,12 @@
 		margin: 0;
 		height: 24px;
 		cursor: pointer;
+	}
+
+	.experience {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
 	}
 
 	.projects {
