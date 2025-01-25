@@ -14,7 +14,7 @@
 	.about-wrapper {
 		display: flex;
 		flex-direction: column;
-		width: min(100% - 15px, 840px);
+		width: min(100vw - 1.5rem, 840px);
 		margin-inline: auto;
 		margin-top: 10svh;
 		margin-bottom: 15svh;

@@ -9,9 +9,8 @@
 	<Splide
 		options={{
 			type: 'loop',
-			width: 'min(100vw - 15px, 840px)',
-			gap: '2rem',
-			height: '40svh'
+			width: 'min(100vw - 1.5rem, 840px)',
+			autoHeight: true
 		}}
 	>
 		{#each images as image}
@@ -28,8 +27,7 @@
 	}
 
 	img {
-		height: 30svh;
-		aspect-ratio: 16/9;
+		width: min(100vw - 1.5rem, 840px);
 		object-fit: cover;
 	}
 </style>
