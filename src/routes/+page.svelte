@@ -132,7 +132,7 @@
 		justify-content: center;
 		margin-top: 10rem;
 
-		@media screen and (max-width: 650px) {
+		@media screen and (max-width: 1200px) {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -144,7 +144,7 @@
 		position: fixed;
 		display: flex;
 
-		@media screen and (max-width: 650px) {
+		@media screen and (max-width: 1200px) {
 			position: relative;
 		}
 	}
@@ -160,6 +160,10 @@
 		gap: 0.5rem;
 		justify-content: center;
 		align-items: center;
+
+		@media screen and (max-width: 1200px) {
+			margin: 3rem 0;
+		}
 	}
 
 	.pfp {

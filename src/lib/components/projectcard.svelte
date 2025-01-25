@@ -45,6 +45,14 @@
 	.image {
 		aspect-ratio: 16 / 9;
 		height: 150px;
+		@media screen and (max-width: 650px) {
+			width: 100%;
+			object-fit: cover;
+
+			filter: blur(3px);
+			-webkit-filter: blur(3px);
+			filter: brightness(50%);
+		}
 	}
 
 	.text {
@@ -52,6 +60,10 @@
 		flex-direction: column;
 		gap: 0.5rem;
 		padding: 1rem;
+		@media screen and (max-width: 650px) {
+			position: absolute;
+			color: white;
+		}
 	}
 
 	.title {
