@@ -127,12 +127,12 @@
 <style>
 	.split {
 		display: grid;
-		grid-template-columns: 500px 700px;
+		grid-template-columns: min(40% - 15px, 500px) min(60% - 15px, 700px);
 		position: relative;
 		justify-content: center;
 		margin-top: 10rem;
 
-		@media screen and (max-width: 1200px) {
+		@media screen and (max-width: 1000px) {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -144,7 +144,7 @@
 		position: fixed;
 		display: flex;
 
-		@media screen and (max-width: 1200px) {
+		@media screen and (max-width: 1000px) {
 			position: relative;
 		}
 	}
