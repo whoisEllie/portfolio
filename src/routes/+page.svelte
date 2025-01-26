@@ -17,6 +17,7 @@
 	import Bluesky from '$lib/icons/brand-bluesky.svelte';
 	import Linkedin from '$lib/icons/brand-linkedin.svelte';
 	import Share from '$lib/icons/share.svelte';
+	import Mail from '$lib/icons/mail-up.svelte';
 </script>
 
 <div class="split">
@@ -41,6 +42,9 @@
 					</a>
 					<a href="https://www.linkedin.com/in/ellie-kelemen/">
 						<Linkedin />
+					</a>
+					<a href="mailto:elliekelemen@protonmail.com">
+						<Mail />
 					</a>
 					<button
 						class="share-button"
@@ -305,7 +309,6 @@
 			-9px -9px 17px #ffffff;
 
 		@media (prefers-color-scheme: dark) {
-			color: white;
 			background: linear-gradient(145deg, #101010, #141414);
 			box-shadow:
 				9px 9px 17px #070707,
