@@ -1,0 +1,17 @@
+
+---
+
+title: Project Isolation 
+
+---
+
+<script>
+	import Title from '$lib/components/title.svelte';
+	import Carousel from '$lib/components/carousel.svelte';
+
+	import Isolation from '$lib/images/ProjectIsolation.png';
+</script>
+
+<Title text={title}/>
+
+<Carousel images={new Array(Isolation)}/>

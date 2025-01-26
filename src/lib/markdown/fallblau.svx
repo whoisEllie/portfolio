@@ -1,0 +1,17 @@
+
+---
+
+title: Fall Blau 
+
+---
+
+<script>
+	import Title from '$lib/components/title.svelte';
+	import Carousel from '$lib/components/carousel.svelte';
+
+	import FallBlau from '$lib/images/FallBlau.jpg';
+</script>
+
+<Title text={title}/>
+
+<Carousel images={new Array(FallBlau)}/>
