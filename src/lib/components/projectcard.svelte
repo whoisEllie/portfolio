@@ -34,6 +34,14 @@
 		box-shadow:
 			8px 8px 16px #cccccc,
 			-8px -8px 16px #ffffff;
+
+		@media (prefers-color-scheme: dark) {
+			color: white;
+			border: 3px solid #212121;
+			box-shadow:
+				8px 8px 16px #0a0a0a,
+				-8px -8px 16px #1a1a1a;
+		}
 	}
 
 	.card-inner {

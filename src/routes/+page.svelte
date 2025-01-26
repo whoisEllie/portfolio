@@ -12,11 +12,11 @@
 	import ProfilePicture from '$lib/images/pfp.jpg';
 
 	// icons
-	import Github from '$lib/icons/brand-github.svg';
-	import Youtube from '$lib/icons/brand-youtube.svg';
-	import Bluesky from '$lib/icons/brand-bluesky.svg';
-	import Linkedin from '$lib/icons/brand-linkedin.svg';
-	import Share from '$lib/icons/share.svg';
+	import Github from '$lib/icons/brand-github.svelte';
+	import Youtube from '$lib/icons/brand-youtube.svelte';
+	import Bluesky from '$lib/icons/brand-bluesky.svelte';
+	import Linkedin from '$lib/icons/brand-linkedin.svelte';
+	import Share from '$lib/icons/share.svelte';
 </script>
 
 <div class="split">
@@ -32,18 +32,16 @@
 				<div style="font-size: 1.75rem;">Ellie Kelemen</div>
 				<div style="font-size: 1rem;">Software Engineer, Technical Director, Maker</div>
 				<div class="socials">
-					<a href="https://bsky.app/profile/elliekelemen.com"
-						><img src={Bluesky} alt="The Bluesky Logo" draggable="false" /></a
-					>
-					<a href="https://youtube.com/@elliemakesgames"
-						><img src={Youtube} alt="The Youtube Logo" draggable="false" /></a
-					>
-					<a href="https://github.com/whoisEllie"
-						><img src={Github} alt="The Github Logo" draggable="false" />
+					<a href="https://bsky.app/profile/elliekelemen.com">
+						<Bluesky />
 					</a>
-					<a href="https://www.linkedin.com/in/ellie-kelemen/"
-						><img src={Linkedin} alt="A Linkedin Logo" draggable="false" /></a
-					>
+					<a href="https://youtube.com/@elliemakesgames"><Youtube /></a>
+					<a href="https://github.com/whoisEllie">
+						<Github />
+					</a>
+					<a href="https://www.linkedin.com/in/ellie-kelemen/">
+						<Linkedin />
+					</a>
 					<button
 						class="share-button"
 						on:click={() => {
@@ -57,8 +55,10 @@
 									.then(() => console.log('Shared successfully'))
 									.catch(() => console.log('Encountered an error while sharing'));
 							}
-						}}><img src={Share} alt="A share icon" draggable="false" /></button
+						}}
 					>
+						<Share />
+					</button>
 				</div>
 			</div>
 		</div>
@@ -250,6 +250,11 @@
 		margin: 0;
 		height: 24px;
 		cursor: pointer;
+		background: none;
+		color: black;
+		@media (prefers-color-scheme: dark) {
+			color: white;
+		}
 	}
 
 	.experience {
@@ -265,6 +270,10 @@
 		background: none;
 		color: #303030;
 		margin: 2rem 0;
+
+		@media (prefers-color-scheme: dark) {
+			color: #808080;
+		}
 	}
 
 	.projects {
@@ -290,5 +299,12 @@
 		box-shadow:
 			9px 9px 17px #cccccc,
 			-9px -9px 17px #ffffff;
+
+		@media (prefers-color-scheme: dark) {
+			background: linear-gradient(145deg, #101010, #141414);
+			box-shadow:
+				9px 9px 17px #070707,
+				-9px -9px 17px #1d1d1d;
+		}
 	}
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Arrow from '$lib/icons/corner-down-right.svg';
+	import Arrow from '$lib/icons/corner-down-right.svelte';
 
 	let {
 		Title,
@@ -14,7 +14,7 @@
 
 <a class="card" href={url} {id}>
 	<div class="arrow">
-		<img src={Arrow} alt="Arrow" />
+		<Arrow />
 	</div>
 	<div class="card-inner">
 		<div>
@@ -81,6 +81,9 @@
 	.role {
 		font-size: 16px;
 		color: #404040;
+		@media (prefers-color-scheme: dark) {
+			color: #909090;
+		}
 	}
 
 	.date {
