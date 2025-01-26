@@ -53,7 +53,11 @@
 										url: 'https://links.elliekelemen.com'
 									})
 									.then(() => console.log('Shared successfully'))
-									.catch(() => console.log('Encountered an error while sharing'));
+									.catch(() => {
+										console.log('Encountered an error while sharing');
+									});
+							} else {
+								window.open('https://links.elliekelemen.com');
 							}
 						}}
 					>
