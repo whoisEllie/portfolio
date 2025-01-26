@@ -305,6 +305,7 @@
 			-9px -9px 17px #ffffff;
 
 		@media (prefers-color-scheme: dark) {
+			color: white;
 			background: linear-gradient(145deg, #101010, #141414);
 			box-shadow:
 				9px 9px 17px #070707,
