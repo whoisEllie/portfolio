@@ -66,32 +66,61 @@
 	<div class="scrolling">
 		<div>
 			I'm a game & software developer with a deep love for technical design. <br /><br /> Currently,
-			I'm a Masters student in Computer Science at the University of Exeter. Alongside my studies, I
-			work part-time as a VR & AI developer at Orbital Media, build & maintain an open-source plugin
-			called FPS Core, and work on a multiplayer game called Warbound. <br /><br /> Previously, I've
-			worked as a frontend developer at Hatless Studios, where I built advanced frontends with the
-			React framework. I've also and interned at Madfinger Games, where I worked as a QA tester on
-			Shadowgun Legends. <br /><br /> In my spare time, you can probably find me on a mountain somewhere,
-			hiking!
+			I'm in the final year of my Masters degree in Computer Science at the University of Exeter.
+			Alongside my studies, I work part-time as a VR & AI developer at
+			<a href="#orbital">Orbital Media</a>, where I build VR applications for healthcare, and
+			engineer generative AI video solutions for use in interactive educational content. I also
+			build & maintain an open-source plugin called
+			<a href="#fpscore">FPS Core</a>, which and work on a multiplayer game called
+			<a href="#warbound">Warbound</a>.
+			<br /><br />
+			Previously, I've worked as a frontend developer at <a href="#hatless">Hatless Studios</a>,
+			where I built advanced frontends with the React framework. I've also and interned at
+			<a href="#madfinger">MADFINGER Games</a>
+			, where I worked as a QA tester on Shadowgun Legends.
+			<br /><br /> In my spare time, you can probably find me on a mountain somewhere, hiking!
 		</div>
 		<h2>Work Experience</h2>
 		<div class="experience">
 			<ExperienceCard
 				Title="Orbital Global Group"
-				Description="Software Developer in VR & AI"
+				date="2024 - 2025"
+				Role="Software Developer in VR & AI"
 				url="https://orbitalglobalgroup.com/"
+				id="orbital"
+				Description="Built VR applications in partnership with the NHS, using the Unity game engine. Worked with GenAI tools, including Runway, to generate interactive videos for training & recruitment purposes. Developed custom generative AI pipelines using ComfyUI and custom LoRA training to ensure consistent characters across a variety of scenes."
 			/>
 			<ExperienceCard
 				Title="Hatless Studios"
-				Description="Frontend Software Developer"
+				date="2023 - 2024"
+				Role="Frontend Software Engineer & Infrastructure Developer"
 				url="https://www.linkedin.com/company/hatless-studios/"
+				id="hatless"
+				Description="Worked with clients to develop 10+ websites for various businessess across Exeter and the Southwest. Wrote and maintained large codebased in React, predominantly using TypeScript. Maintained and expanded Nix-based infrastructure, including CI/CD and web hosting."
+			/>
+			<ExperienceCard
+				Title="Summer Game Dev"
+				date="Summer 2021"
+				Role="Game Designer"
+				url="https://summer-game-dev.itch.io/giants-bridge"
+				id="sgd"
+				Description="Led the design of our game 'Giant's Bridge' during the 2021 instance of Summer Game Dev, writing technical documentation, running playtests, and co-ordinating the rest of the development team."
 			/>
 			<ExperienceCard
 				Title="MADFINGER Games"
-				Description="QA Intern"
+				date="Summer 2018"
+				Role="QA Intern"
 				url="https://www.madfingergames.com/"
+				id="madfinger"
+				Description="Assisted in the QA process for Shadowgun Legends, investigating player reports and detailing findings in internal documentation."
 			/>
 		</div>
+		<button
+			class="resume"
+			on:click={() => {
+				window.open('resume.pdf');
+			}}>find more employment details on my <u>resume</u></button
+		>
 		<h2>Projects</h2>
 		<div class="projects">
 			<ProjectCard
@@ -115,6 +144,7 @@
 				Description="A singleplayer open-world FPS, built on Unreal Engine 4.27 whose development led to the creation of FPS Core "
 				slug="isolation"
 			/>
+			<!--
 			<ProjectCard
 				Image={GiantsBridgeThumbnail}
 				Alt="Image"
@@ -122,6 +152,7 @@
 				Description="A third-person couch co-op game built as part of Summer Game Dev 2021."
 				slug="giantsbridge"
 			/>
+			-->
 			<ProjectCard
 				Image={FallBlauThumbnail}
 				Alt="Image"
@@ -129,6 +160,7 @@
 				Description="An authentic WW2 FPS, built in Unreal Engine and my first exploration and use of C++ programming"
 				slug="fallblau"
 			/>
+			<!--
 			<ProjectCard
 				Image={RainstoneThumbnail}
 				Alt="Image"
@@ -136,6 +168,7 @@
 				Description="An early game jam project and my first experience working with a team."
 				slug="rainstone"
 			/>
+			-->
 		</div>
 
 		<a href="https://github.com/whoisEllie/portfolio" class="acknowledgment">
@@ -158,6 +191,17 @@
 			align-items: center;
 			margin: 0 1rem;
 		}
+	}
+
+	h2 {
+		margin-top: 3rem;
+	}
+
+	a,
+	a:visited,
+	a:hover,
+	a:active {
+		color: inherit;
 	}
 
 	.fixed {
@@ -211,7 +255,16 @@
 	.experience {
 		display: flex;
 		flex-direction: column;
-		gap: 1.5rem;
+		gap: 3rem;
+	}
+
+	.resume {
+		border: none;
+		cursor: pointer;
+		width: max-content;
+		background: none;
+		color: #303030;
+		margin: 2rem 0;
 	}
 
 	.projects {

@@ -18,4 +18,8 @@
 		font-family: Lexend Deca;
 		background-color: #f0f0f0;
 	}
+
+	:global(html) {
+		scroll-behavior: smooth;
+	}
 </style>

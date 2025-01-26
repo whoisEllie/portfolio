@@ -1,16 +1,33 @@
 <script lang="ts">
 	import Arrow from '$lib/icons/corner-down-right.svg';
 
-	let { Title, Description, url }: { Title: string; Description: string; url: string } = $props();
+	let {
+		Title,
+		Role,
+		url,
+		id,
+		date,
+		Description
+	}: { Title: string; Role: string; url: string; id: string; date: string; Description: string } =
+		$props();
 </script>
 
-<a class="card" href={url}>
+<a class="card" href={url} {id}>
 	<div class="arrow">
 		<img src={Arrow} alt="Arrow" />
 	</div>
 	<div class="card-inner">
-		<div class="title">
-			{Title}
+		<div>
+			<div class="title">
+				<div>
+					{Title}
+				</div>
+				<div class="date">{date}</div>
+			</div>
+			<div class="role">
+				{Role}
+			</div>
+			<hr />
 		</div>
 		<div class="description">
 			{Description}
@@ -55,7 +72,24 @@
 	}
 
 	.title {
+		display: flex;
+		gap: 0.5rem;
 		font-size: 24px;
 		font-weight: 500;
+	}
+
+	.role {
+		font-size: 16px;
+		color: #404040;
+	}
+
+	.date {
+		color: #707070;
+		font-size: 14px;
+	}
+
+	.description {
+		margin-top: 0.5rem;
+		font-size: 1rem;
 	}
 </style>

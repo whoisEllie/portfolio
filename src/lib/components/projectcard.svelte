@@ -8,7 +8,7 @@
 	}: { Title: string; Description: string; Image: string; Alt: string; slug: string } = $props();
 </script>
 
-<a class="card" href={slug}>
+<a class="card" href={slug} id={slug}>
 	<div class="card-inner">
 		<img class="image" src={Image} alt={Alt} draggable="false" />
 		<div class="text">
