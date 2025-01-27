@@ -15,3 +15,7 @@ title: Project Isolation
 <Title text={title}/>
 
 <Carousel images={new Array(Isolation)}/>
+
+Project Isolation was the first game developmer project I approached with a more professional mindset. I used git for version control, planned out features in advance, and actually thinking about the mechanic I wanted to add before impementing them. It was also a significant technical step forward for me, with a full C++ core and advanced mechanics, such as an expanded moveset and weapon attachments.
+
+To raise awareness of the game and provide progress updates to potential players, I also produced a 4-episode series of devlogs on YouTube, walking viewers through my creative and technical process.
