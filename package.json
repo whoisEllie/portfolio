@@ -31,6 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@splidejs/svelte-splide": "^0.2.9"
+		"@splidejs/svelte-splide": "^0.2.9",
+		"@vercel/analytics": "^1.4.1"
 	}
 }
