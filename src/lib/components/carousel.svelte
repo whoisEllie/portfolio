@@ -24,6 +24,7 @@
 <style>
 	.carousel {
 		margin: 2rem 0;
+		width: min(100vw - 1.5rem, 840px);
 	}
 
 	img {
