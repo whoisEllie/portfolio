@@ -3,7 +3,7 @@
 	let Content = data.content;
 </script>
 
-<a class="back" href="/">Back</a>
+<a class="back" href="/">Home</a>
 <div class="about-wrapper">
 	<article>
 		<Content />

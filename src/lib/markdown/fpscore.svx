@@ -16,13 +16,32 @@ title: FPSCore
 
 <Title text={title}/>
 
+FPS Core is a robust gameplay framework plugin for Unreal Engine which abstracts many difficult features of FPS Games to simplify their creation. I independently published it on the Unreal Engine Marketplace (now FAB) in 2022.
+
 <Carousel images={new Array(FPSCoreThumbnail, FPSCorePhoto1, FPSCorePhoto2, FPSCorePhoto3)}/>
 
-I independently developed and published FPS Core, a robust gameplay framework plugin for Unreal Engine, which is now available on the official Unreal Engine Marketplace (currently FAB). Designed to streamline the creation of first-person shooter games, FPS Core quickly gained popularity, achieving over 85,000 downloads and maintaining an impressive 4.3/5-star average rating. This success highlights its value to developers looking for efficient and effective tools in their game development projects.
+Designed to streamline the creation of first-person shooter games, FPS Core quickly gained popularity following it's release, leading me to abandon working on <u><a href="/isolation" target="_self">Project Isolation</a></u> to provide adequate support and documentation. Over it's life, it has achieving over 85,000 downloads on the Marketplace alone, and maintaining a 4.3/5-star average rating. 
 
-To ensure accessibility and usability, I authored detailed and user-friendly documentation, making the plugin especially popular among new Unreal Engine users. Recognizing the growing demand for support, I scaled access to the documentation by implementing a Cloudflare CDN, enabling it to handle over 150,000 monthly connections seamlessly. This ensured that users had uninterrupted access to the resources they needed to fully leverage FPS Core’s features.
+At it's core (no pun intended), FPS Core is a gameplay framework plugin that provides users with an out-of-the-box solution for building FPS characters. It's features include a robust weapon system with support for attachments, predictable recoil patterns and advanced animation support, as well as a dynamic movement system and fully-featured interaction system.
 
-To further enhance user experience, I developed a custom OpenAI-powered bot using GPT-4. The bot provides automated responses to common questions based on the documentation, significantly reducing wait times and improving overall user satisfaction. This innovation allowed me to address the most frequent inquiries effectively while focusing on other aspects of community engagement.
+I continued to update FPS Core well into 2023, delivering 8 major updates, introducing new features and mechanics. In 2024, I took a break from the plugin to focus on my career and Warbound, but I am now working on a huge overhaul with FPS Core V2, which I am aiming to release by the summer of 2025.
 
-In addition to automation, I offered one-on-one technical support through Discord, helping users adapt FPS Core to their specific needs. This hands-on approach not only expanded the plugin’s reach but also solidified its reputation as a trusted tool within the Unreal Engine Indie FPS development community. Through these combined efforts, FPS Core has become an indispensable asset for developers seeking to create exceptional FPS games.
+New for me with FPS Core was considering the needs of professional users who would be working with my code. This drove me to author thousands of words of user-friendly documentation, especially my popular "QuickStart!" series of guides, which helped people set up FPS Core in record time. I also had to scale this documentation to handle the amount of users, which I ultimately accomplished with the help of a Cloudflare CDN, enabling it to handle over 150,000 monthly connections. 
 
+At it's peak, FPS Core was so popular that I was struggling to deal with the overwhelming amount of support queries. To facilitate faster turnaround time and to allow myself to focus on the most complex queries, I developed a custom OpenAI-powered bot using GPT-4. The bot provided automated responses to common questions based on the documentation, which was able to help a large number of users without my direct input, allowing me to focus on the most technically challenging queries.
+
+The FPS Core discord server became a hub for FPS developers, with over 600 members at the time of writing. Here, I offered one-on-one technical support, helping users adapt FPS Core to their specific needs. I also developed custom features based on the requests of individuals, and took suggestions for new features to be implemented into the plugin.
+
+
+
+<style>
+
+a {
+	color: black;
+
+	@media (prefers-color-scheme: dark) {
+		color: white;
+	}
+}
+
+</style>

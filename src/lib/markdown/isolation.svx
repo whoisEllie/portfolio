@@ -10,12 +10,31 @@ title: Project Isolation
 	import Carousel from '$lib/components/carousel.svelte';
 
 	import Isolation from '$lib/images/ProjectIsolation.png';
+	import AR15 from '$lib/images/Isolation/AR15.png';
+	import PlayForCash from '$lib/images/Isolation/PlayForCash.png';
+	import ShootingRange from '$lib/images/Isolation/ShootingRange.png';
 </script>
 
 <Title text={title}/>
 
-<Carousel images={new Array(Isolation)}/>
+Project Isolation was a singleplayer open-world FPS game, a rearchitecture of Fall Blau, leveraging many new skills and technologies I had learned in the interrim. The project was abrubtly cancelled upon the relase of <u><a href="/fpscore" target="_self">FPS Core</a></u>, which took priority due to it's success.
 
-Project Isolation was the first game developmer project I approached with a more professional mindset. I used git for version control, planned out features in advance, and actually thinking about the mechanic I wanted to add before impementing them. It was also a significant technical step forward for me, with a full C++ core and advanced mechanics, such as an expanded moveset and weapon attachments.
+<Carousel images={new Array(Isolation, AR15, ShootingRange, PlayForCash)}/>
 
-To raise awareness of the game and provide progress updates to potential players, I also produced a 4-episode series of devlogs on YouTube, walking viewers through my creative and technical process.
+Project Isolation was the first game development project I approached with a more professional mindset. I used git for version control, planned out features in advance, and actually thinking about the mechanic I wanted to add before impementing them. It was also a significant technical step forward for me, with a full C++ core and advanced mechanics, such as an expanded moveset and weapon attachments.
+
+To raise awareness of the game and provide progress updates to potential players, I also produced a 4-episode series of devlogs on YouTube, walking viewers through my creative and technical process. You can find my favourite of these episodes <u><a href="https://www.youtube.com/watch?v=MdP_yObwOe4">here</a></u>.
+
+During it's development, I maintined Project Isolation's github repository, with the intention of making it easier for other people to use the code to build their own games. I decided in mid-2022 to instead turn the project into a plugin, to make it a drop-in solution for anyone looking for a robust FPS system. This necessitated a minor rearchitect of the project, and ultimately resulted in <u><a href="/fpscore" target="_self">FPS Core</a></u>, which due to it's succes superceded Project Isolation and became my new focus.
+
+<style>
+
+a {
+	color: black;
+
+	@media (prefers-color-scheme: dark) {
+		color: white;
+	}
+}
+
+</style>

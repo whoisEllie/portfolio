@@ -11,7 +11,7 @@ title: Fall Blau
 
 	import FallBlau from '$lib/images/FallBlau.jpg';
 	import AICover from '$lib/images/FallBlau/AICover.png';
-	import AIPoints from '$lib/images/FallBlau/AIPoints.jpg';
+	import AIPoints from '$lib/images/FallBlau/AIPoints.png';
 	import EarlyLevelDesign from '$lib/images/FallBlau/EarlyLevelDesign.jpg';
 	import TestGameplay from '$lib/images/FallBlau/TestGameplay.gif';
 </script>
@@ -21,10 +21,8 @@ title: Fall Blau
 
 Fall Blau is a First-Person shooter designed and built within Unreal Engine 4, set during the invasion of the Soviet Union in 1943. It follows a german soldier from skirmishes on the soviet border to the depths of Stalingrad.
 
-<Carousel images={new Array(FallBlau, AICover, AIPoints, TestGameplay, EarlyLevelDesign)}/>
+<Carousel images={new Array(FallBlau)}/>
 
-I started work on it in the summer of 2019, having realised that I needed to rebiild my previous project, All Out, from the ground up in order to get it working with the C++ systems I intended to implement. In that process I also decided to shrink the scope, in order to have a better chance at completing the game.
+I started work on it in the summer of 2019, having realised that I needed to rebiild my previous project, All Out, from the ground up in order to get it working with the C++ systems I intended to implement. In that process I also decided to shrink the scope of All Out to come up with a completable game. 
 
 I was responsible for the vast majority of Fall Blau’s development, from writing the core gameplay mechanics in C++ to creating levels, cutscenes, art and other related assets for the project. A large amount of visual assets were sourced from the Unreal Engine marketplace and other marketplaces, such as cgtrader, as I underestimated the amount of assets that would be needed to complete such a project.
-
-The project came to an end when I graduated High School and left for university. Ultimately, I was able to deliver an early Beta product, with all 6 levels greyboxed and all core mechanics implemented.
