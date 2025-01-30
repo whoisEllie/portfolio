@@ -276,11 +276,11 @@
 		cursor: pointer;
 		width: max-content;
 		background: none;
-		color: #303030;
+		color: #202020;
 		margin: 2rem 0;
 
 		@media (prefers-color-scheme: dark) {
-			color: #808080;
+			color: #a0a0a0;
 		}
 	}
 
