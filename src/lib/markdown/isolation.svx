@@ -21,7 +21,7 @@ Project Isolation was a singleplayer open-world FPS game, a rearchitecture of Fa
 
 <Carousel images={new Array(Isolation, AR15, ShootingRange, PlayForCash)}/>
 
-Project Isolation was the first game development project I approached with a more professional mindset. I used git for version control, planned out features in advance, and actually thinking about the mechanic I wanted to add before impementing them. It was also a significant technical step forward for me, with a full C++ core and advanced mechanics, such as an expanded moveset and weapon attachments.
+Project Isolation was the first game development project I approached with a more professional mindset. I used git for version control, planned out features in advance, and actually thinking about the mechanic I wanted to add before implementing them. It was also a significant technical step forward for me, with a full C++ core and advanced mechanics, such as an expanded moveset and weapon attachments.
 
 To raise awareness of the game and provide progress updates to potential players, I also produced a 4-episode series of devlogs on YouTube, walking viewers through my creative and technical process. You can find my favourite of these episodes <u><a href="https://www.youtube.com/watch?v=MdP_yObwOe4">here</a></u>.
 
