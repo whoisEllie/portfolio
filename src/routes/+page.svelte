@@ -83,7 +83,7 @@
 			<a href="#warbound">Warbound</a>.
 			<br /><br />
 			Previously, I've worked as a frontend developer at <a href="#hatless">Hatless Studios</a>,
-			where I built advanced frontends with the React framework. I've also and interned at
+			where I built advanced frontends with the React framework. I've also interned at
 			<a href="#madfinger">MADFINGER Games</a>
 			, where I worked as a QA tester on Shadowgun Legends.
 			<br /><br /> In my spare time, you can probably find me on a mountain somewhere, hiking!
