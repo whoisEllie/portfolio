@@ -73,13 +73,13 @@
 	</div>
 	<div class="scrolling">
 		<div>
-			I'm a game & software developer with a deep love for technical design. <br /><br /> Currently,
-			I'm in the final year of my Masters degree in Computer Science at the University of Exeter.
-			Alongside my studies, I work part-time as a VR & AI developer at
-			<a href="#orbital">Orbital Media</a>, where I build VR applications for healthcare, and
-			engineer generative AI video solutions for use in interactive educational content. I also
-			build & maintain an open-source plugin called
-			<a href="#fpscore">FPS Core</a>, which and work on a multiplayer game called
+			I'm a game & software developer with a deep love for technical design. <br /><br /> I
+			graduated with a Masters degree in Computer Science from the University of Exeter in the
+			summer of 2025. Alongside my studies, I worked part-time as a VR & AI developer at
+			<a href="#orbital">Orbital Media</a>, where I built VR applications for healthcare, and
+			engineered generative AI video solutions for use in interactive educational content. In my
+			spare time, I build & maintain an open-source plugin called
+			<a href="#fpscore">FPS Core</a> and work on a multiplayer game called
 			<a href="#warbound">Warbound</a>.
 			<br /><br />
 			Previously, I've worked as a frontend developer at <a href="#hatless">Hatless Studios</a>,
