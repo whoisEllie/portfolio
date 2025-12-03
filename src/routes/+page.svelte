@@ -81,7 +81,7 @@
 			<a href="#fpscore">FPS Core</a> and work on a multiplayer game called
 			<a href="#warbound">Warbound</a>.
 			<br /><br />I have a Masters degree in Computer Science from the University of Exeter, and
-			prior to my time at Bloxd worked at
+			prior to my time at Bloxd, I worked at
 			<a href="#orbital"> Orbital Global Group</a> as a VR & AI developer and at
 			<a href="#hatless">Hatless Studios</a> as a Frontend Developer. I have a strong focus on
 			bringing creative solutions to both design and technical challenges, and love wearing multiple
