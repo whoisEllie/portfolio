@@ -73,22 +73,30 @@
 	</div>
 	<div class="scrolling">
 		<div>
-			I'm a game & software developer with a deep love for technical design. <br /><br /> I
-			graduated with a Masters degree in Computer Science from the University of Exeter in the
-			summer of 2025. Alongside my studies, I worked part-time as a VR & AI developer at
-			<a href="#orbital">Orbital Media</a>, where I built VR applications for healthcare, and
-			engineered generative AI video solutions for use in interactive educational content. In my
-			spare time, I build & maintain an open-source plugin called
+			I'm a game & software developer with a deep love for technical design. <br /><br />
+
+			Currently, I work as a software engineer at <a href="#bloxd">Bloxd</a>, building and
+			maintaining multiplayer games for millions of players around the world. In my spare time, I
+			build & maintain an open-source plugin called
 			<a href="#fpscore">FPS Core</a> and work on a multiplayer game called
 			<a href="#warbound">Warbound</a>.
-			<br /><br />
-			Previously, I've worked as a frontend developer at <a href="#hatless">Hatless Studios</a>,
-			where I built advanced frontends with the React framework. I've also interned at
-			<a href="#madfinger">MADFINGER Games</a>, where I worked as a QA tester on Shadowgun Legends.
+			<br /><br />I have a Masters degree in Computer Science from the University of Exeter, and
+			prior to my time at Bloxd worked at Orbital Global Group as a VR & AI developer and at
+			<a href="#hatless">Hatless Studios</a> as a Frontend Developer. I have a strong focus on
+			bringing creative solutions to both design and technical challenges, and love wearing multiple
+			hats :)
 			<br /><br /> In my spare time, you can probably find me on a mountain somewhere, hiking!
 		</div>
 		<h2>Work Experience</h2>
 		<div class="experience">
+			<ExperienceCard
+				Title="Bloxd"
+				date="2025 - Present"
+				Role="Software Engineer"
+				url="https://bloxd.io/"
+				id="bloxd"
+				Description="Shipped new games, including Fishing, to Bloxd's 17m cross-platform MAUs in our custom TS engine."
+			/>
 			<ExperienceCard
 				Title="Orbital Global Group"
 				date="2024 - 2025"
